@@ -1,0 +1,54 @@
+body {
+  background-color: #ebedef;
+  margin-bottom: 100px;
+  font-family: Arial;
+  font-size: 17px;
+  margin: 0;
+  margin-bottom: 100px;
+}
+
+.bygge-bruer-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  flex: 1;
+}
+.bygge-bruer-div img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.bygge-bruer-div .content {
+  position: absolute;
+  bottom: 1;
+  text-align: center;
+  background: #ebedef; /* Black background with 0.5 opacity */
+  color: #000000;
+  border-radius: 20px;
+  width: 54%;
+  height: 32%;
+  padding-left: 10px;
+}
+
+.bygge-bruer-img {
+  vertical-align: middle;
+  object-fit: cover;
+  object-position: top;
+}
+
+.centered-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.les-mer-button {
+  background-color: #ebedef;
+  height: 48px;
+  width: 160px;
+  border-color: black;
+  border-radius: 30px;
+}
