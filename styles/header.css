@@ -46,9 +46,10 @@ a:hover:after {
   justify-content: center;
   display: flex;
   cursor: pointer;
-  transition: opacity 0.25s;
+  transition: opacity 0.3s, box-shadow 0.3s;
 }
 
 .bruer-logo:hover {
   opacity: 0.8;
+  box-shadow: 0px 0px 3px black;
 }
