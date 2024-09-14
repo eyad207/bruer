@@ -5,6 +5,7 @@ header {
   flex: 1;
 }
 .middle-section {
+  position: sticky;
   display: flex;
   flex-direction: column;
   justify-content: center;
