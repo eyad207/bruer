@@ -164,3 +164,26 @@ h1 {
 .bruer-logo-footer {
   width: 94px;
 }
+
+@media screen and (max-width: 600px) {
+  .bruer-logo {
+    display: flex;
+    height: 140px;
+  }
+  .navlist {
+    display: none;
+  }
+  #menu-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    height: 30px;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .left-section {
+    width: 60px;
+  }
+}
