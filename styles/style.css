@@ -3,10 +3,10 @@ header {
   justify-content: center;
   height: 178px;
   flex: 1;
+  position: sticky;
 }
 
 .middle-section {
-  position: sticky;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -74,7 +74,7 @@ a:hover:after {
 }
 
 body {
-  background-color: #e1e1e1;
+  background-color: #ffffff;
   margin-bottom: 100px;
   font-family: Arial;
   font-size: 17px;
@@ -155,13 +155,48 @@ h1 {
 .eventer {
   display: flex;
   justify-content: center;
-}
-
-.h1-eventer {
+  margin-top: 64px;
 }
 
 .bruer-logo-footer {
   width: 94px;
+}
+.section-detail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 1000px;
+}
+.se-alle-eventer-button {
+  background-color: #ffffff;
+  height: 48px;
+  width: 160px;
+  border-color: black;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  border-color: black;
+  border-width: 3px;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.se-alle-eventer-button:hover {
+  background-color: #e5e5e5;
+  box-shadow: 0px 0px 2px black;
+  transform: translateY(-5px);
+}
+.se-alle-eventer-button:active {
+  background-color: #c0c0c0;
+  box-shadow: 0px 0px 4px black;
+}
+.se-alle-eventer-span {
+  padding-left: 12px;
+  padding-right: 12px;
+  font-size: 15px;
+}
+.h1-eventer {
+  margin: 0;
 }
 
 @media screen and (max-width: 600px) {
