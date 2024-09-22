@@ -34,8 +34,7 @@ a {
   text-decoration: none;
   font-family: "PT Serif";
   font-size: 14px;
-  transition: 300ms;
-  transition: transform 0.3s;
+  transition: transform 0.3s, transition 0.3s;
 }
 a:hover {
   transform: translateY(-3px);
@@ -47,7 +46,6 @@ a:after {
   height: 2px;
   display: block;
   background: black;
-  transition: 300ms;
 }
 
 a:hover:after {
