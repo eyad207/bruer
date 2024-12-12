@@ -6,7 +6,12 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-
+<url>
+    <loc>https://example.com/sample2.html</loc>
+    <image:image>
+      <image:loc>https://example.com/picture.jpg</image:loc>
+    </image:image>
+  </url>
 <url>
   <loc>https://bruerforalle.no/</loc>
   <lastmod>2024-09-22T14:00:28+00:00</lastmod>
