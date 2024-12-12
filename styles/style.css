@@ -1,84 +1,11 @@
-header {
-  display: flex;
-  justify-content: space-between;
-  height: 178px;
-  flex: 1;
-  position: sticky;
-}
-.left-section, .right-section{
-  margin-top: 2rem;
-}
-
-.left-section ul, .right-section ul{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 2rem;
-  padding: 0;
-}
-
-.left-section{
-  margin-left: 3rem;
-}
-.left-section li:hover{
-  cursor: pointer;
-}
-
-.left-section li:after {
-  content: '';
-  width: 0px;
-  height: 2px;
-  display: block;
-  background: black;
-  transition: 300ms;
-}
-
-.left-section li:hover:after {
-  width: 100%;
-}
-
-.right-section{
-  margin-right: 3rem;
-}
-header>div a{
-  font-size: 1.1rem;
-}
-header>nav {
+/*GENERELT*/
+main{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
-.bruer-logo {
-  height: 60%;
-  width: fit-content;
-  border-radius: 50px;
-  justify-content: center;
-  display: flex;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.bruer-logo:hover {
-  opacity: 0.8;
-  transform: translateY(-5px);
-}
-
-header>nav>ul {
-  width: 700px;
-  display: flex;
-  padding-left: 0;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: 16px;
-}
-
-header li{
-  list-style: none;
-}
-
-a{
+a {
   color: black;
   text-decoration: none;
   font-size: 0.9rem;
@@ -98,150 +25,297 @@ a:after {
 a:hover:after {
   width: 100%;
 }
+
 body {
-  background-color: #ffffff;
+  background-color: #f1f1f1;
   margin-bottom: 100px;
   font-family: Arial;
   font-size: 17px;
   margin: 0;
-  margin-bottom: 100px;
 }
 
+/*HEADER*/
+header {
+  display: flex;
+  justify-content: space-evenly;
+  height: 178px;
+  flex: 1;
+  position: sticky;
+}
+header>nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header>nav>ul {
+  width: 700px;
+  display: flex;
+  padding-left: 0;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+header li {
+  list-style: none;
+}
+
+header>div a {
+  font-size: 1.1rem;
+}
+
+.left-section,
+.right-section {
+  margin-top: 2rem;
+}
+
+.left-section ul,
+.right-section ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 0;
+}
+
+.left-section {
+  width: 10rem;
+}
+
+.left-section li:hover {
+  cursor: pointer;
+}
+
+.left-section li:after {
+  content: '';
+  width: 0px;
+  height: 2px;
+  display: block;
+  background: black;
+  transition: 300ms;
+}
+
+.left-section li:hover:after {
+  width: 100%;
+}
+
+.right-section {
+  margin-right: 3rem;
+}
+
+.bruer-logo {
+  height: 60%;
+  width: fit-content;
+  border-radius: 50px;
+  justify-content: center;
+  display: flex;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.bruer-logo:hover {
+  opacity: 0.8;
+  transform: translateY(-5px);
+}
+
+/*MAIN*/
+section{
+  display: flex;
+  align-items: center;
+  width: 75%;
+}
+/*Vi bygger kulturelle bruer i samfunnet.*/
 .bygge-bruer-div {
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
   position: relative;
-  flex: 1;
+  width: 100%;
 }
 
 .bygge-bruer-div .content {
-  font-size: 27px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7rem;
+  color: rgba(50, 64, 77, 1);
   position: absolute;
   text-align: center;
   background: #ebedef;
   border-radius: 14px;
-  width: 500px;
-  height: 340px;
+  width: 40%;
+  height: 30%;
+  padding: 1rem;
   transition: transform 0.3s;
 }
+
 .bygge-bruer-div .content:hover {
   transform: translateY(-5px);
 }
+
 h1 {
   color: #222c38;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
 }
 
-.bygge-bruer-img {
+.bygge-bruer-div img {
   vertical-align: middle;
   object-fit: cover;
   object-position: top;
-}
-
-.bygge-bruer-div img {
   flex-shrink: 0;
   min-width: 100%;
   min-height: 100%;
 }
 
-.centered-title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 .les-mer-button {
-  background-color: #ebedef;
-  height: 48px;
-  width: 160px;
-  border-color: black;
-  border-radius: 30px;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
-  border-color: black;
-  border-width: 3px;
   font-size: 15px;
   font-family: Arial, Helvetica, sans-serif;
-}
-.les-mer-button:hover {
-  background-color: #d3d3d3;
-  box-shadow: 0px 0px 4px black;
-  transform: translateY(-5px);
-}
-.les-mer-button:active {
-  background-color: #c0c0c0;
-  box-shadow: 0px 0px 7px black;
+  background-color: #ebedef;
+  height: 3rem;
+  width: 10rem;
+  border-color: black;
+  border-radius: 30px;
+  border-width: 2px;
+  transition: 0.3s;
 }
 
-.eventer {
-  display: flex;
-  justify-content: center;
-  margin-top: 64px;
+.les-mer-button:hover {
+  background-color: #d3d3d3;
+  transform: translateY(-5px);
+}
+
+.les-mer-button:active {
+  background-color: #c0c0c0;
 }
 
 .bruer-logo-footer {
   width: 94px;
 }
-.section-detail {
+/*Se hva som kommer opp snart.*/
+.kommende-eventer{
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+.details-row{
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 1000px;
-}
-.se-alle-eventer-button {
-  background-color: #ffffff;
-  height: 48px;
-  width: 160px;
-  border-color: black;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
-  border-color: black;
-  border-width: 3px;
-  font-size: 15px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.se-alle-eventer-button:hover {
-  background-color: #e5e5e5;
-  box-shadow: 0px 0px 2px black;
-  transform: translateY(-5px);
-}
-.se-alle-eventer-button:active {
-  background-color: #c0c0c0;
-  box-shadow: 0px 0px 4px black;
-}
-.se-alle-eventer-span {
-  padding-left: 12px;
-  padding-right: 12px;
-  font-size: 15px;
-}
-.h1-eventer {
-  margin: 0;
+  width: 100%;
+  margin-bottom: 2rem;
 }
 
-@media screen and (max-width: 600px) {
-  .bruer-logo {
-    display: flex;
-    height: 140px;
-  }
-  .navlist {
-    display: none;
-  }
-  #menu-icon {
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    height: 30px;
-  }
-  header {
-    display: flex;
-    justify-content: space-between;
-  }
-  .left-section {
-    width: 60px;
-  }
+.details-row button{
+  border-radius: 1rem;
+  height: 3.5rem;
+  width: 10rem;
+  background-color: #f6f7f9;
+}
+.eventer-container{
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  align-items: left;
+  width: 100%;
+}
+.eventer-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  width: 32%;
+  height: fit-content;
+  box-shadow: 0 0 0.05rem #222c38;
+  border-radius: 0.8rem;
+}
+.eventer-div>img{
+  width: 100%;
+}
+
+.dato-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1rem;
+  gap: 3rem;
+}
+
+.eventer-div span{
+  display: flex;
+  background-color: #e7e7e7;
+  height: 2rem;
+  width: 10rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 0.7rem;
+}
+.eventer-div h3{
+  width: 100%;
+  padding-left: 2rem;
+  text-align: left;
+  font-weight: 600;
+  margin-top: 2rem;
+  font-family: "Playfair Display";
+}
+.eventer-div p{
+  width: 100%;
+  padding-left: 2rem;
+  text-align: left;
+  margin-top: 0;
+}
+.eventer-div button{
+  background-color: #e7e7e7;
+  width: 12rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+/*FOOTER*/
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+  margin-top: 5rem;
+  border-top: 0.01rem solid #222c38;
+  padding: 3rem;
+}
+
+footer>nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+footer>nav>ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+  margin-top: 3rem;
+  padding-left: 0;
+}
+footer>nav>ul>li{
+  list-style: none;
+}
+footer>nav>img{
+  width: 10rem;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.bruer-logo:hover {
+  opacity: 0.8;
+  transform: translateY(-5px);
 }
