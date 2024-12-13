@@ -358,3 +358,22 @@ footer>nav>ul>li{
   font-size: 1.2rem;
   line-height: 2rem;
 }
+/*STØTT_OSS SIDE*/
+#stott_oss div{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 50%;
+}
+/*PROJECTER SIDE*/
+#prijecter-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#prijecter-div img{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 10rem;
+}
