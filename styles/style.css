@@ -363,17 +363,54 @@ footer>nav>ul>li{
   display: flex;
   flex-direction: row;
   justify-content: center;
+  width: 40%;
+}
+
+/*PROJECTER SIDE*/
+.projecter-eventer-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.projecter-eventer-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  box-shadow: 0 0 0.05rem #222c38;
+  border-radius: 0.8rem;
+  margin-bottom: 2rem;
+  padding-right: 1.5rem;
+}
+.bilde-container{
   width: 50%;
 }
-/*PROJECTER SIDE*/
-#prijecter-div{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+
+.projecter-eventer-div img{
+  height: 16rem;
+  width: 100%;
 }
-#prijecter-div img{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+
+.projecter-eventer-div button{
   width: 10rem;
+  height: 3rem;
+  background-color: #ebedef;
+  border-radius: 0.7rem;
+  border: solid 0.1rem #222c38;
+}
+
+.projecter-dato-div{
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+}
+
+.projecter-dato-div span{
+  background-color: #c7c7c7;
+  padding: 0.4rem;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
 }
