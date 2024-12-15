@@ -45,6 +45,7 @@ header {
   top: 0;
   background-color: #f1f1f1;
   margin-bottom: 3.5rem;
+  border-bottom: solid 0.02rem #222c38;
 }
 header>nav {
   display: flex;
@@ -70,44 +71,6 @@ header>div a {
   font-size: 1.1rem;
 }
 
-.left-section,
-.right-section {
-  margin-top: 2rem;
-}
-
-.left-section ul,
-.right-section ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 2rem;
-  padding: 0;
-}
-
-.left-section {
-  width: 10rem;
-}
-
-.left-section li:hover {
-  cursor: pointer;
-}
-
-.left-section li:after {
-  content: '';
-  width: 0px;
-  height: 2px;
-  display: block;
-  background: black;
-  transition: 300ms;
-}
-
-.left-section li:hover:after {
-  width: 100%;
-}
-
-.right-section {
-  margin-right: 3rem;
-}
 
 .bruer-logo {
   height: 7rem;
