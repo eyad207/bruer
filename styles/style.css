@@ -1,4 +1,10 @@
 /*GENERELT*/
+:root{
+  --maincolor: #ececec;
+}
+header, footer{
+  background-color: var(--maincolor);
+}
 main{
   display: flex;
   flex-direction: column;
@@ -37,21 +43,31 @@ body {
 /*HEADER*/
 header {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   height: 178px;
   flex: 1;
   position: sticky;
   z-index: 10; 
   top: 0;
-  background-color: #f1f1f1;
   margin-bottom: 3.5rem;
-  border-bottom: solid 0.02rem #222c38;
+  border-bottom: solid 0.01rem #cdd0d4;
 }
+
+.meny-span{
+  font-size: 2rem;
+  transition: 0.3s;
+}
+.meny-span:hover{
+  color: #a2b0c3;
+  cursor: pointer;
+}
+
 header>nav {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
+  width: 65%;
 }
 
 header>nav>ul {
@@ -73,7 +89,7 @@ header>div a {
 
 
 .bruer-logo {
-  height: 7rem;
+  height: 8rem;
   width: 12rem;
   justify-content: center;
   display: flex;
@@ -165,9 +181,6 @@ h1 {
   background-color: #c0c0c0;
 }
 
-.bruer-logo-footer {
-  width: 94px;
-}
 /*Se hva som kommer opp snart.*/
 .kommende-eventer{
   display: flex;
@@ -261,6 +274,25 @@ h1 {
   background-color: #d3d3d3;
   transform: translateY(-5px);
 }
+
+.daglig-leder{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.daglig-leder ul{
+  padding-left: 0;
+}
+.daglig-leder li:first-child{
+  font-size: 2rem;
+  font-weight: 600;
+}
+.daglig-leder li:nth-child(2){
+  font-size: 1.3rem;
+}
+.daglig-leder li{
+  list-style: none;
+}
 /*FOOTER*/
 footer{
   display: flex;
@@ -274,22 +306,32 @@ footer{
 
 footer>nav{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 70%;
 }
 footer>nav>ul{
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 50%;
-  margin-top: 3rem;
+  flex-direction: column;
+  text-align: left;
+  width: fit-content;
   padding-left: 0;
+  justify-content: space-evenly;
+  gap: 1rem;
+
 }
 footer>nav>ul>li{
   list-style: none;
+  height: fit-content;
+  width: fit-content;
+  padding: 0;
+
+}
+footer span{
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 600;
+  font-size: 1rem;
 }
 
 /*OM OSS*/
