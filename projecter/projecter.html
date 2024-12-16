@@ -22,9 +22,16 @@
 
 <body>
   <header>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeDetails('myNav')">&times;</a>
+      <div class="overlay-content">
+        <a href="../om_oss/om_oss.html">OM OSS</a>
+        <a href="../projecter/projecter.html">VÅRE PROJEKTER</a>
+        <a href="../stott_oss/stott_oss.html">STØTT OSS</a>
+      </div>
     </div>
     <nav>
-      <span class="meny-span" onclick="openNav()">&#9776; </span>
+      <span class="meny-span" onclick="openDetails('myNav')">&#9776;</span>
       <a class="bruer-logo" href="../index.html"><img src="../logo/Bruer-logo.png" alt="Bruer-logo" /></a>
       <div></div>
     </nav>
@@ -46,7 +53,7 @@
             <p>Stav ungdomskole</p>
           </div>
           <div>
-            <div id="arabiskSpråkkurs" class="overlay">
+            <div id="arabiskSpråkkurs" class="projecter-overlay">
               <a href="javascript:void(0)" class="closebtn" onclick="closeDetails('arabiskSpråkkurs')">&times;</a>
               <div class="overlay-content">
                 <p>
@@ -73,7 +80,7 @@
               <span>Sat, Oct 5</span>
               <span>1:30 PM</span>
             </div>
-            <div id="internasjonalCup" class="overlay">
+            <div id="internasjonalCup" class="projecter-overlay">
               <a href="javascript:void(0)" class="closebtn" onclick="closeDetails('internasjonalCup')">&times;</a>
               <div class="overlay-content">
                 <p>
@@ -100,7 +107,7 @@
             </div>
             <p>Lillestrøm biblotek</p>
           </div>
-          <div id="kvinnestyrking" class="overlay">
+          <div id="kvinnestyrking" class="projecter-overlay">
             <a href="javascript:void(0)" class="closebtn" onclick="closeDetails('kvinnestyrking')">&times;</a>
             <div class="overlay-content">
               <p>
@@ -131,7 +138,7 @@
             </div>
             <p>Lillestrøm kultursenter</p>
           </div>
-          <div id="kulturmix" class="overlay">
+          <div id="kulturmix" class="projecter-overlay">
             <a href="javascript:void(0)" class="closebtn" onclick="closeDetails('kulturmix')">&times;</a>
             <div class="overlay-content">
               <p>
@@ -183,6 +190,24 @@
       <a class="bruer-logo" href="../index.html"><img src="../logo/Bruer-logo.png" alt="Bruer-logo" /></a>
       <ul>
         <li>
+          <span>BruerForAlle</span>
+        </li>
+        <li>
+          <span>Lillestrøm Kommune</span>
+        </li>
+        <li>
+          <span>Daglig leder:</span>
+          <span>Aiman Lazkani</span>
+        </li>
+        <li>
+          <span>Tlf.: 40 94 82 15</span>
+        </li>
+        <li>
+          <span>E-post: aimanlaza@hotmail.com</span>
+        </li>
+      </ul>
+      <ul>
+        <li>
           <a class="about-us" href="om_oss/om_oss.html">OM OSS</a>
         </li>
         <li>
@@ -202,7 +227,7 @@
       <ul>
         <li>
           <i class="fa fa-facebook-f" style="font-size:20px"></i>
-          <a href="">Facebook</a>
+          <a href="https://www.facebook.com/profile.php?id=100081885361288">Facebook</a>
         </li>
         <li>
           <i class="fab fa-tiktok"></i>
