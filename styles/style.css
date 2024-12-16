@@ -44,7 +44,7 @@ body {
 header {
   display: flex;
   justify-content: center;
-  height: 178px;
+  height: 150px;
   flex: 1;
   position: sticky;
   z-index: 10; 
