@@ -324,14 +324,14 @@ footer>nav>ul{
 footer>nav>ul>li{
   list-style: none;
   height: fit-content;
-  width: fit-content;
   padding: 0;
 
 }
 footer span{
   font-family: 'Times New Roman', Times, serif;
-  font-weight: 600;
-  font-size: 1rem;
+  font-weight: 700;
+  width: 100%;
+  font-size: 1.1rem;
 }
 
 /*OM OSS*/
@@ -437,7 +437,7 @@ footer span{
   top: 0;
   left: 0;
   background-color: #222c38;
-  background-color: rgba(38, 41, 81, 0.9);
+  background-color: rgba(38, 41, 81, 0.8);
   overflow-x: hidden;
   transition: 0.5s;
 }
