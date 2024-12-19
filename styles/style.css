@@ -33,7 +33,7 @@ header ul a:hover:after, footer ul a:hover:after {
 }
 
 body {
-  background-color: #f1f1f1;
+  background-color: #f4f4f4;
   margin-bottom: 100px;
   font-family: Arial;
   font-size: 17px;
@@ -429,7 +429,7 @@ footer span{
   border-radius: 0.5rem;
   margin-right: 1rem;
 }
-/*JAVASCRIPT*/
+/*Menu*/
 .overlay {
   height: 100%;
   width: 0;
@@ -467,19 +467,34 @@ footer span{
   color: #f1f1f1;
 }
 
-/**/
+/*Mer detalier button*/
 .projecter-overlay {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   height: 100%;
   width: 0;
   position: fixed;
   z-index: 11;
   top: 0;
   left: 0;
-  background-color: rgba(38, 41, 81, 0.3);
+  background-color: rgba(70, 70, 70, 0.231);
   overflow-x: hidden;
-  transition: 0.2s;
+}
+.projecter-overlay-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: #b3bfd2f9;
+  top: 25%;
+  width: 60%;
+  height: fit-content;
+  text-align: left;
+  margin-top: 30px;
+}
+.projecter-overlay-content p{
+  width: 100%;
 }
 .projecter-overlay img{
   width: 35%;
