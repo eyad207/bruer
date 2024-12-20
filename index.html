@@ -2,138 +2,142 @@
 <html lang="nb">
 
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8" >
   <title>BruerForAlle</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" >
   <link rel="icon" sizes="32x32" href="logo/Bruer-logo.png">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" >
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" >
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-    crossorigin="anonymous" />
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    crossorigin="anonymous" >
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" >
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="styles/style.css" >
 </head>
 
 <body>
-  <header>
-    <div id="myNav" class="overlay">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeDetails('myNav')">&times;</a>
-      <div class="overlay-content">
-        <a href="om_oss">OM OSS</a>
-        <a href="projecter">VÅRE PROJEKTER</a>
-        <a href="stott_oss">STØTT OSS</a>
+  <div class="page-container">
+    <header>
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeDetails('myNav')">&times;</a>
+        <div class="overlay-content">
+          <a href="om_oss">OM OSS</a>
+          <a href="projecter">VÅRE PROJEKTER</a>
+          <a href="stott_oss">STØTT OSS</a>
+        </div>
       </div>
-    </div>
-    <nav>
-      <span class="meny-span" onclick="openDetails('myNav')">&#9776;</span>
-      <a class="bruer-logo" href="https://bruerforalle.no/"><img src="../logo/Bruer-logo.png" alt="Bruer-logo" /></a>
-      <div></div>
-    </nav>
-  </header>
-  <main>
-    <section class="bygge-bruer-div">
-      <img src="images/kulturellebruer.webp" alt="bygge-bruer" />
-      <div class="content">
-        <h1>Vi bygger kulturelle bruer i samfunnet.</h1>
-        <button class="les-mer-button"><a href="om_oss">Les mer om oss</a></button>
-      </div>
-    </section>
-    <div id="internasjonalcup" class="projecter-overlay">
-      <span href="javascript:void(0)" class="closebtn" onclick="closeDetails('internasjonalcup')">&times;</span>
-      <div class="projecter-overlay-content">
+      <nav>
+        <span class="meny-span" onclick="openDetails('myNav')">&#9776;</span>
+        <a class="bruer-logo" href="https://bruerforalle.no"><img src="logo/Bruer-logo.png" alt="Bruer-logo"></a>
+        <div></div>
+      </nav>
+    </header>
+    <main>
+      <section class="bygge-bruer-div">
+        <img src="images/kulturellebruer.webp" alt="bygge-bruer">
+        <div class="content">
+          <h1>Vi bygger kulturelle bruer i samfunnet.</h1>
+          <button class="les-mer-button" onclick="location.href='om_oss'">Les mer</button>
+        </div>
+      </section>
+      <div id="internasjonalcup" class="projecter-overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeDetails('internasjonalcup')">&times;</a>
+        <div class="projecter-overlay-content">
+          <div>
+            <img src="images/intarnasjonalcup.webp" alt="kulturmix">
+          </div>
+          <div class="info-conatiner">
+            <h1>Internasjonal cup for ungdommer</h1>
+            <div class="span-details-div">
+              <span>Sat, Oct 5</span>
+              <span>1:30 PM</span>
+            </div>
+            <p>
+              Bruer inviterer til
+              INTERNASJONAL
+              FOTBALL CUP FOR UNGDOMMER
+              30 september 2023 for å delta ta gjerne kontakt: aimanlaza@hotmail.com SMS til: 40948215
+            </p>
+            <p>
+              For mer: <a href="https://www.facebook.com/profile.php?id=100081885361288">
+                https://www.facebook.com/profile.php?id=100081885361288
+              </a>
+            </p>
+  
+          </div>
+        </div>
         <div>
-          <img src="images/intarnasjonalcup.webp" alt="kulturmix">
         </div>
-        <div class="info-conatiner">
-          <h1>Internasjonal cup for ungdommer</h1>
-          <div class="span-details-div">
-            <span>Sat, Oct 5</span>
-            <span>1:30 PM</span>
+      </div>
+      <section class="kommende-eventer">
+        <div class="details-row">
+          <h2>Se hva som kommer opp snart.</h2>
+          <button class="les-mer-button" onclick="location.href='projecter'">Les mer</button>
+        </div>
+        <div class="eventer-container">
+          <div class="eventer-div">
+            <img src="images/intarnasjonalcup.webp" alt="kvinnedag">
+            <div class="span-details-div">
+              <span>Dato: Kommer snart</span>
+              <span>Tid: Kommer snart</span>
+            </div>
+            <h3>Internasjonalcup for ungdommer</h3>
+            <p>Sted: Kommer snart</p>
+            <button onclick="openDetails('internasjonalcup')">Se detaljer</button>
           </div>
-          <p>
-            Bruer inviterer til
-            INTERNASJONAL
-            FOTBALL CUP FOR UNGDOMMER
-            30 september 2023 for å delta ta gjerne kontakt: aimanlaza@hotmail.com SMS til: 40948215
-          </p>
-          <p>
-            For mer: <a href="https://www.facebook.com/profile.php?id=100081885361288">
-              https://www.facebook.com/profile.php?id=100081885361288
-            </a>
-          </p>
-
         </div>
-      </div>
-      <div>
-      </div>
-    </div>
-    <section class="kommende-eventer">
-      <div class="details-row">
-        <h2>Se hva som kommer opp snart.</h2>
-        <a href="projecter"><button>Se alle eventer</button></a>
-      </div>
-      <div class="eventer-container">
-        <div class="eventer-div">
-          <img src="images/intarnasjonalcup.webp" alt="kvinnedag">
-          <div class="span-details-div">
-            <span>Dato: Kommer snart</span>
-            <span>Tid: Kommer snart</span>
-          </div>
-          <h3>Internasjonalcup for ungdommer</h3>
-          <p>Sted: Kommer snart</p>
-          <button onclick="openDetails('internasjonalcup')">Se detaljer</button>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <nav>
-      <a class="bruer-logo" href="https://bruerforalle.no/"><img src="../logo/Bruer-logo.png" alt="Bruer-logo" /></a>
-      <ul>
-        <li>
-          <span>BruerForAlle</span>
-        </li>
-        <li>
-          <span>Lillestrøm Kommune</span>
-        </li>
-        <li>
-          <span>Daglig leder:</span>
-          <span>Aiman Lazkani</span>
-        </li>
-        <li>
-          <span>Tlf.: 40 94 82 15</span>
-        </li>
-        <li>
-          <span>E-post: aimanlaza@hotmail.com</span>
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <a class="about-us" href="om_oss">Om oss</a>
-        </li>
-        <li>
-          <a class="our-projects" href="projecter">Våre projecter</a>
-        </li>
-        <li>
-          <a class="upcoming-events" href="kommende_arrengemanter/arrengemanter">Støtt oss</a>
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <i class="fa fa-facebook-f" style="font-size:20px"></i>
-          <a href="https://www.facebook.com/profile.php?id=100081885361288">Facebook</a>
-        </li>
-        <li>
-          <i class="fab fa-tiktok"></i>
-          <a href="https://www.tiktok.com/@bruer9">TikTok</a>
-        </li>
-      </ul>
-    </nav>
-  </footer>
-  <script src="javascript/javascript.js"></script>
+      </section>
+    </main>
+    <footer>
+      <nav>
+        <a class="bruer-logo" href="https://bruerforalle.no"><img src="logo/Bruer-logo.png" alt="Bruer-logo"></a>
+        <ul>
+          <li>
+            <span>BruerForAlle</span>
+          </li>
+          <li>
+            <span>Lillestrøm Kommune</span>
+          </li>
+          <li>
+            <span>Daglig leder:</span>
+            <span>Aiman Lazkani</span>
+          </li>
+          <li>
+            <span>Tlf.: 40 94 82 15</span>
+          </li>
+          <li>
+            <span>E-post: aimanlaza@hotmail.com</span>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a class="about-us" href="om_oss">Om oss</a>
+          </li>
+          <li>
+            <a class="our-projects" href="projecter">Våre projecter</a>
+          </li>
+          <li>
+            <a class="upcoming-events" href="kommende_arrengemanter/arrengemanter">Støtt oss</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <i class="fa fa-facebook-f" style="font-size:20px"></i>
+            <a href="https://www.facebook.com/profile.php?id=100081885361288">Facebook</a>
+          </li>
+          <li>
+            <i class="fab fa-tiktok"></i>
+            <a href="https://www.tiktok.com/@bruer9">TikTok</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+    <script src="javascript/javascript.js"></script>
+  </div>
+ 
 </body>
+
 </html>

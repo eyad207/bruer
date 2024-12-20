@@ -8,6 +8,11 @@ html, body {
   height: 100%;
   margin: 0;
 }
+.page-container {
+  display: flex;
+  flex-direction: column; /* Ordner innholdet vertikalt */
+  min-height: 100vh; /* Sørg for at siden dekker hele vinduet */
+}
 header, footer{
   background-color: var(--maincolor);
 }
@@ -50,7 +55,6 @@ header {
   display: flex;
   justify-content: center;
   height: 150px;
-  flex: 1;
   position: sticky;
   z-index: 10; 
   top: 0;
@@ -138,7 +142,7 @@ section{
   background: var(--maincolor);
   border-radius: 14px;
   width: 40%;
-  height: 30%;
+  height: 20vw;
   padding: 1rem;
   transition: transform 0.3s;
 }
@@ -221,18 +225,25 @@ h1 {
   width: 100%;
   transition: 0.3s;
 }
-.eventer-container:hover{
-  transform:translateY(-1rem);
-}
-.eventer-div{
+
+.eventer-div {
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow: hidden;
   width: 32%;
   height: fit-content;
-  box-shadow: 0 0 0.05rem #222c38;
+  border: solid 0.5px #c5c5c5;
   border-radius: 0.8rem;
+  transition: 0.3s;
+}
+
+.eventer-div:hover {
+  box-shadow: none;  /* Fjern box-shadow helt på hover */
+  transform:translateY(-1rem);
+}
+.eventer-div:not(:hover) {
+  box-shadow: none;  /* Sett tilbake den subtile skyggen etter hover */
 }
 .eventer-div>img{
   width: 100%;
@@ -553,4 +564,86 @@ footer span{
 /*404 page*/
 #fffpage h1{
   font-size: 10rem;
+}
+/* Mobile Devices: Max width 768px */
+@media screen and (max-width: 768px) {
+  /* Body */
+  body {
+    font-size: 15px; /* Redusert fontstørrelse */
+    padding: 0 1rem; /* Innvendig padding for bedre lesbarhet */
+  }
+
+  .bruer-logo {
+    width: 10rem; /* Mindre logo */
+    height: auto;
+  }
+
+  /* Main Content */
+  section {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .content {
+    width: 90%; /* Gjør boksen fleksibel */
+    height: 60vw;
+    padding: 1rem;
+  }
+
+  .eventer-container {
+    flex-direction: column; /* Bytt til enkolonneoppsett */
+    gap: 1.5rem;
+  }
+
+  .eventer-div {
+    width: 100%; /* Bruker full bredde */
+  }
+
+  /* Footer */
+  footer > nav {
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+  }
+}
+
+/* Small Mobile Devices: Max width 480px */
+@media screen and (max-width: 480px) {
+  /* Header */
+  header {
+    height: 120px; /* Mindre høyde */
+  }
+
+  header > nav {
+    width: 100%;
+  }
+
+  header ul a {
+    font-size: 0.8rem; /* Redusert fontstørrelse */
+  }
+
+  .meny-span {
+    font-size: 1.5rem; /* Mindre font for menyikon */
+  }
+
+  /* Main Content */
+  .content {
+    font-size: 1.2rem; /* Redusert fontstørrelse */
+    padding: 0.5rem;
+  }
+
+  .les-mer-button {
+    width: 8rem; /* Mindre knapper */
+    font-size: 14px;
+  }
+
+  .eventer-div h3, .eventer-div p {
+    padding-left: 1rem; /* Mindre innrykk */
+  }
+
+  /* Footer */
+  footer > nav > ul {
+    flex-direction: column;
+    text-align: center; /* Sentraliser tekst */
+  }
 }
