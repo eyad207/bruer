@@ -160,7 +160,7 @@ section{
   transform: translateY(-5px);
 }
 
-h1 {
+.content h2 {
   color: #222c38;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
@@ -346,11 +346,11 @@ footer>nav>ul{
 }
 footer>nav>ul>li{
   list-style: none;
-  height: fit-content;
-  width: fit-content;
+  height: 100%;
+  width: 100%;
   padding: 0;
-
 }
+
 footer span{
   font-weight: 600;
   width: 100%;
@@ -712,14 +712,14 @@ footer span{
 }
 
 /* Small Mobile Devices: Max width 480px */
-@media screen and (max-width: 768) {
+@media screen and (max-width: 768px) {
   /* Header */
   header {
     height: 120px; /* Mindre høyde */
   }
 
   header > nav {
-    width: 100%;
+    width: 80%;
   }
 
   header ul a {
@@ -727,14 +727,25 @@ footer span{
   }
 
   .meny-span {
-    font-size: 1.2rem; /* Mindre font for menyikon */
+    font-size: 1.3rem; /* Mindre font for menyikon */
   }
 
   /* Main Content */
   .content {
     font-size: 1.2rem; /* Redusert fontstørrelse */
+    height: auto;
+    width: 50%;
   }
-
+  .content button{
+    height: 1.8rem;
+    width: 7rem;
+  }
+  .content h2{
+    font-size: 1.2rem;
+  }
+  .bygge-bruer-div img{
+    height: 70vw;
+  }
 
   /* Footer */
   footer > nav > ul {
