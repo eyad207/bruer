@@ -284,6 +284,8 @@ h1 {
 .eventer-div button{
   background-color: var(--bodycolor);
   width: 12rem;
+  height: 3rem;
+  font-size: 1.3rem;
   border-radius: 1rem;
   margin-bottom: 1rem;
   font-family: 'Times New Roman', Times, serif;
@@ -564,6 +566,8 @@ footer span{
   text-decoration: none;
   position: sticky;
   font-size: 36px;
+  background-color: rgba(0,0,0,0);
+  border: none;
   color: #818181;
   display: block;
   transition: 0.3s;
