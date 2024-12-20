@@ -367,22 +367,21 @@ footer span{
   display: flex;
   flex-direction: row;
   gap: 3rem;
-  margin-bottom: 3rem;
-  transition: 0.4s;
-  width: 80%; /* Sørger for at seksjonen bruker 100% bredde innenfor #om_oss */
+  margin-bottom: 4rem;
+  transition: 0.2s;
+  width: 70%; /* Sørger for at seksjonen bruker 100% bredde innenfor #om_oss */
 }
-
+.section_img{
+  height: 100%;
+}
 #om_oss section:hover{
   transform: translateY(-2rem);
 }
 #om_oss section img{
-  width: 40rem;
+  width: 40vw;
   height: 100%;
 }
 
-#om_oss section div{
-  padding: 1.5rem;
-}
 #om_oss section div h2{
   font-family: 'Times New Roman', Times, serif;
   font-weight: 600;
@@ -657,6 +656,9 @@ footer span{
   .bilde-container{
     width: 100%;
   }
+  .section_img{
+    width: 400px;
+  }
   .projecter-eventer-div img {
     height: 50vw;
     width: 100%;
@@ -752,15 +754,27 @@ footer span{
   .bygge-bruer-div img{
     height: 70vw;
   }
-  #om_oss section{
+  .section_img{
+    display: flex;
+    justify-content: center;
     width: 100%;
-    height: 100%;
+  }
+  .section_img img {
+    width: 100%; /* Bildet fyller hele containeren */
+    height: 100%; /* Beholder bildets proporsjoner */
+    max-width: 100%; /* Sørger for at bildet ikke blir større enn containeren */
+  }
+  #om_oss section{
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
   }
   #om_oss section h2{
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
   #om_oss section p{
-    font-size: 1rem;
+    font-size: 0.7rem;
 
   }
 
