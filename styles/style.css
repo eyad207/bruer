@@ -464,7 +464,7 @@ footer span{
   z-index: 11;
   top: -100%; /* Starter skjult over skjermen */
   left: 0;
-  background-color: rgba(81, 38, 38, 0.8); /* Bakgrunnsfarge */
+  background-color: rgba(93, 52, 52, 0.8); /* Bakgrunnsfarge */
   overflow-x: hidden;
   transition: top 0.5s ease; /* Smooth slide-down animation */
 }
@@ -473,6 +473,7 @@ footer span{
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1.5rem;
   position: relative;
   top: 25%;
   width: 100%;
@@ -484,7 +485,8 @@ footer span{
   padding: 8px;
   text-decoration: none;
   font-size: 36px;
-  color: #818181;
+  color: #aaaaaa;
+  font-weight: 700;
   display: block;
   transition: 0.3s;
 }
@@ -580,9 +582,10 @@ footer span{
 @media screen and (max-width: 900px) {
   header{
     margin-bottom: 1.5rem;
+    height: fit-content;
   }
   header nav{
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
   /* Body */
   body {
@@ -590,8 +593,8 @@ footer span{
   }
 
   .bruer-logo {
-    width: 35vw; /* Mindre logo */
-    height: 25vw;
+    width: 30vw; /* Mindre logo */
+    height: 20vw;
   }
 
   /* Main Content */
@@ -681,7 +684,7 @@ footer span{
 }
 
 /* Small Mobile Devices: Max width 480px */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768) {
   /* Header */
   header {
     height: 120px; /* Mindre høyde */
