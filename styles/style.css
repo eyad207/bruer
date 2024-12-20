@@ -366,12 +366,12 @@ footer span{
 #om_oss section {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   gap: 3rem;
   margin-bottom: 3rem;
   transition: 0.4s;
-  width: 100%; /* Sørger for at seksjonen bruker 100% bredde innenfor #om_oss */
+  width: 80%; /* Sørger for at seksjonen bruker 100% bredde innenfor #om_oss */
 }
+
 #om_oss section:hover{
   transform: translateY(-2rem);
 }
@@ -646,7 +646,7 @@ footer span{
     flex-direction: column;
     align-items: center;
     overflow: hidden;
-    width: 32vw;
+    width: 100%;
     background-color: var(--bodycolor);
     border: solid 0.5px #c5c5c5;
     box-shadow: none;
@@ -753,7 +753,7 @@ footer span{
     height: 70vw;
   }
   #om_oss section{
-    width: 50vw;
+    width: 100%;
     height: 100%;
   }
   #om_oss section h2{
@@ -762,11 +762,6 @@ footer span{
   #om_oss section p{
     font-size: 1rem;
 
-  }
-
-  #om_oss section img{
-    width: 30rem;
-    height: 80%;
   }
 
   /* Footer */
