@@ -437,14 +437,14 @@ footer span{
 /*Menu*/
 .overlay {
   height: 100%;
-  width: 0;
+  width: 100%; /* Full bredde på skjermen */
   position: fixed;
   z-index: 11;
-  top: 0;
+  top: -100%; /* Starter skjult over skjermen */
   left: 0;
-  background-color: rgba(81, 38, 38, 0.8);
+  background-color: rgba(81, 38, 38, 0.8); /* Bakgrunnsfarge */
   overflow-x: hidden;
-  transition: 0.5s;
+  transition: top 0.5s ease; /* Smooth slide-down animation */
 }
 
 .overlay-content {
@@ -534,8 +534,7 @@ footer span{
   font-size: 1.1rem;
 }
 
-
-.projecter-overlay>span {
+.closebtn {
   padding: 8px;
   height: fit-content;
   text-decoration: none;
@@ -547,7 +546,7 @@ footer span{
 }
 
 
-.projecter-overlay>span:hover, .projecter-overlay>span:focus, .projecter-overlay>span:hover, .projecter-overlay>span:focus {
+.closebtn:hover, .closebtn:focus{
   cursor: pointer;
   color: #f1f1f1;
 }
