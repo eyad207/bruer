@@ -394,6 +394,12 @@ footer span{
   line-height: 2rem;
 }
 /*STØTT_OSS SIDE*/
+#stott_oss .bilde-container{
+  max-width: 50%;
+}
+#stott_oss .bilde-container img{
+  width: 50rem;
+}
 #stott_oss div{
   display: flex;
   flex-direction: row;
@@ -722,6 +728,9 @@ footer span{
     justify-content: center;
     align-items: center;
     width: 100%;
+  }
+  #stott_oss .bilde-container img{
+    width: 20rem;
   }
 
 }
