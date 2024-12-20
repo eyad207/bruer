@@ -4,14 +4,25 @@
   --bodycolor: #ffebeb;
 }
 html, body {
-  color: #393434;
   height: 100%;
   margin: 0;
 }
+
 .page-container {
+  min-height: 100vh;
   display: flex;
-  flex-direction: column; /* Ordner innholdet vertikalt */
-  min-height: 100vh; /* Sørg for at siden dekker hele vinduet */
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* Fyller opp mellomrommet mellom header og footer */
+}
+
+footer {
+  background-color: var(--maincolor);
+  text-align: center;
+  padding: 1rem;
+  border-top: 0.01rem solid #222c38;
 }
 header, footer{
   background-color: var(--maincolor);
@@ -20,7 +31,6 @@ main{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 header ul a, footer ul a {
   color: black;
@@ -47,7 +57,6 @@ body {
   background-color: var(--bodycolor);
   font-family: Arial;
   font-size: 17px;
-  margin: 0;
 }
 
 /*HEADER*/
@@ -231,7 +240,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   overflow: hidden;
-  width: 32%;
+  width: 32vw;
   height: fit-content;
   border: solid 0.5px #c5c5c5;
   border-radius: 0.8rem;
@@ -567,15 +576,20 @@ footer span{
 }
 /* Mobile Devices: Max width 768px */
 @media screen and (max-width: 768px) {
+  header{
+    margin-bottom: 1.5rem;
+  }
+  header nav{
+    justify-content: space-evenly;
+  }
   /* Body */
   body {
     font-size: 15px; /* Redusert fontstørrelse */
-    padding: 0 1rem; /* Innvendig padding for bedre lesbarhet */
   }
 
   .bruer-logo {
-    width: 10rem; /* Mindre logo */
-    height: auto;
+    width: 35vw; /* Mindre logo */
+    height: 25vw;
   }
 
   /* Main Content */
@@ -583,11 +597,27 @@ footer span{
     flex-direction: column;
     width: 90%;
   }
+  .bygge-bruer-div img{
+    height: 80vw;
+  }
 
   .content {
-    width: 90%; /* Gjør boksen fleksibel */
-    height: 60vw;
-    padding: 1rem;
+    width: 50%; /* Gjør boksen fleksibel */
+    height: fit-content;
+    padding: 0;
+  }
+  .content h1{
+    font-size: 1.4rem;
+  }
+  .les-mer-button{
+    height: 2rem;
+  }
+  .details-row{
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  .details-row h2{
+    font-size: 1.5rem;
   }
 
   .eventer-container {
@@ -602,9 +632,18 @@ footer span{
   /* Footer */
   footer > nav {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 2rem;
     width: 100%;
   }
+  footer ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
 }
 
 /* Small Mobile Devices: Max width 480px */
