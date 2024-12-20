@@ -427,7 +427,13 @@ footer span{
   padding: 2rem;
 }
 
-.projecter-dato-div span{
+.span-details-div{
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+}
+
+.span-details-div span{
   background-color: #c7c7c7;
   padding: 0.4rem;
   border-radius: 0.5rem;
@@ -503,17 +509,26 @@ footer span{
   text-align: left;
   margin-top: 30px;
 }
-.projecter-overlay-content div{
+.projecter-overlay-content h1{
+  font-size: 3rem;
+  text-align: center;
+}
+
+.info-conatiner{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   width: 100%;
 }
 
-.projecter-overlay-content img{
+.img-container{
+  height: 30rem;
   width: 100%;
-  height: auto;
+  overflow: hidden;
+}
+.projecter-overlay-content img{
+  height: 100%;
+  width: 100%;
 }
 
 .projecter-overlay-content p{
@@ -524,8 +539,9 @@ footer span{
 }
 
 
-.projecter-overlay a {
+.projecter-overlay>span {
   padding: 8px;
+  height: fit-content;
   text-decoration: none;
   position: sticky;
   font-size: 36px;
@@ -535,7 +551,8 @@ footer span{
 }
 
 
-.overlay a:hover, .overlay a:focus, .projecter-overlay a:hover, .projecter-overlay a:focus {
+.projecter-overlay>span:hover, .projecter-overlay>span:focus, .projecter-overlay>span:hover, .projecter-overlay>span:focus {
+  cursor: pointer;
   color: #f1f1f1;
 }
 /*404 page*/
