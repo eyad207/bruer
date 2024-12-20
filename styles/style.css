@@ -619,6 +619,9 @@ footer span{
   .details-row h2{
     font-size: 1.5rem;
   }
+  .overlay a{
+    font-size: 1.3rem;
+  }
 
   .eventer-container {
     flex-direction: column; /* Bytt til enkolonneoppsett */
