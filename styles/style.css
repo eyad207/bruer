@@ -697,6 +697,13 @@ footer span{
     height: 2.2rem;
     margin-bottom: 1rem;
   }
+  .closebtn{
+    width: 3%;
+    padding: 0;
+  }
+  .projecter-overlay-content{
+    width: 80%;
+  }
 
   .eventer-div {
     width: 100%; /* Bruker full bredde */
