@@ -1,8 +1,11 @@
+// Function to open the sliding nav
 function openDetails(id) {
-  document.getElementById(id).style.width = "100%";
+  const element = document.getElementById(id);
+  element.style.top = "0"; // Slide down
 }
 
-// Funksjon for å lukke detaljer
+// Function to close the sliding nav
 function closeDetails(id) {
-  document.getElementById(id).style.width = "0";
+  const element = document.getElementById(id);
+  element.style.top = "-100%"; // Slide back up
 }

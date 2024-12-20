@@ -219,6 +219,10 @@ h1 {
   gap: 3rem;
   align-items: left;
   width: 100%;
+  transition: 0.3s;
+}
+.eventer-container:hover{
+  transform:translateY(-1rem);
 }
 .eventer-div{
   display: flex;
@@ -478,13 +482,14 @@ footer span{
   flex-direction: row;
   justify-content: space-between;
   height: 100%;
-  width: 0;
+  width: 100%;
   position: fixed;
   z-index: 11;
-  top: 0;
+  top: -100%; /* Hidden above the viewport initially */
   left: 0;
-  background-color: rgba(70, 70, 70, 0.231);
-  overflow-x: hidden;
+  background-color: rgba(154, 118, 118, 0.482); /* Updated for better visibility */
+  overflow: hidden;
+  transition: top 0.3s ease; /* Smooth slide-down animation */
 }
 .projecter-overlay-content {
   display: flex;
@@ -508,11 +513,12 @@ footer span{
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: var(--bodycolor);
   width: 100%;
 }
 
 .img-container{
-  height: 30rem;
+  max-height: 30rem;
   width: 100%;
   overflow: hidden;
 }
