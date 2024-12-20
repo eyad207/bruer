@@ -203,6 +203,7 @@ h1 {
 .kommende-eventer{
   display: flex;
   flex-direction: column;
+  width: 75vw;
   margin-top: 2rem;
 }
 .details-row{
@@ -241,7 +242,6 @@ h1 {
   align-items: center;
   overflow: hidden;
   width: 32vw;
-  height: fit-content;
   border: solid 0.5px #c5c5c5;
   border-radius: 0.8rem;
   transition: 0.3s;
@@ -418,6 +418,8 @@ footer span{
 .projecter-eventer-div img{
   height: 16rem;
   width: 100%;
+  object-fit: cover; /* Sørger for at bildet fyller containeren uten å bli strekt */
+
 }
 
 .projecter-eventer-div button{
@@ -575,7 +577,7 @@ footer span{
   font-size: 10rem;
 }
 /* Mobile Devices: Max width 768px */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   header{
     margin-bottom: 1.5rem;
   }
@@ -622,13 +624,42 @@ footer span{
   .overlay a{
     font-size: 1.3rem;
   }
+  .kommende-eventer{
+    width: 80vw;
+  }
+  .projecter-eventer-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    width: 32vw;
+    background-color: var(--bodycolor);
+    border: solid 0.5px #c5c5c5;
+    box-shadow: none;
+    border-radius: 0.8rem;
+    padding-right: 0;
+    transition: 0.3s;
+  }
+  .bilde-container{
+    width: 100%;
+  }
+  .projecter-eventer-div img {
+    height: 50vw;
+    width: 100%;
+  }
+  .projecter-eventer-div button{
+    margin-bottom: 1rem;
+  }
+  .projecter-dato-div{
+    padding: 0;
+  }
 
   .eventer-container {
     flex-direction: column; /* Bytt til enkolonneoppsett */
     gap: 1.5rem;
   }
 
-  .eventer-div {
+  .projecter-eventer-div {
     width: 100%; /* Bruker full bredde */
   }
 
@@ -679,9 +710,6 @@ footer span{
     font-size: 14px;
   }
 
-  .eventer-div h3, .eventer-div p {
-    padding-left: 1rem; /* Mindre innrykk */
-  }
 
   /* Footer */
   footer > nav > ul {
