@@ -727,13 +727,12 @@ footer span{
   }
 
   .meny-span {
-    font-size: 1.5rem; /* Mindre font for menyikon */
+    font-size: 1.2rem; /* Mindre font for menyikon */
   }
 
   /* Main Content */
   .content {
     font-size: 1.2rem; /* Redusert fontstørrelse */
-    padding: 1rem;
   }
 
 
