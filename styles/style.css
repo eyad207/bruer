@@ -361,7 +361,7 @@ footer>nav>ul{
 footer>nav>ul>li{
   list-style: none;
   height: 100%;
-  width: 100%;
+  width: fit-content;
   padding: 0;
 }
 
